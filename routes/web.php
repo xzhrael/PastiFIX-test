@@ -42,7 +42,10 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 // Rute Landing Page (Ini sudah benar)
-Route::get('/', [LandingPageController::class, 'index'])->name('home');
+// Route::get('/', [LandingPageController::class, 'index'])->name('home'); <-- comment biar kostumer bisa buka landing page tanpa login
+Route::get('/', function () {
+    return view('welcome');
+})->name('home');
 // routes/web.php
 Route::get('/profil-dummy', [\App\Http\Controllers\ProfilController::class, 'index'])->name('profil.dummy');
 Route::post('/profil-dummy/upload', [\App\Http\Controllers\ProfilController::class, 'upload'])->name('profil.upload');
@@ -189,7 +192,7 @@ Route::middleware(['auth'])->group(function () {
         return view('services.my-orders');
     })->name('services.my-orders');
 
-    //User landing page
+    // User landing page
     Route::get('/user', function () {
         return view('user-main');
     })->name('user-main');
