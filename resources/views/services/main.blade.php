@@ -1,6 +1,6 @@
 @extends('layouts.services')
 
-@section('title', 'Daftar Jasa Tukang')
+@section('title', 'PastiFIX - Services')
 
 @section('content')
 
@@ -115,8 +115,29 @@
                                 <img src="https://placehold.co/600x400/e9ecef/e9ecef" class="card-img-top"
                                     alt="Service Image">
                                 <div class="card-body">
+                                    <h5 class="card-title">Jalan</h5>
+                                    <small class="text-muted">Mulai dari</small>
+                                    <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="{{ route('services.detail') }}" class="text-decoration-none text-dark">
+                            <div class="card service-card h-100">
+                                <img src="https://placehold.co/600x400/e9ecef/e9ecef" class="card-img-top"
+                                    alt="Service Image">
+                                <div class="card-body">
                                     <h5 class="card-title">Konslet</h5>
+                                    <small class="text-muted">Mulai dari</small>
                                     <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
                                 </div>
                             </div>
                         </a>
@@ -129,7 +150,11 @@
                                     alt="Service Image">
                                 <div class="card-body">
                                     <h5 class="card-title">Lorem</h5>
+                                    <small class="text-muted">Mulai dari</small>
                                     <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
                                 </div>
                             </div>
                         </a>
@@ -142,7 +167,11 @@
                                     alt="Service Image">
                                 <div class="card-body">
                                     <h5 class="card-title">Ipsum</h5>
+                                    <small class="text-muted">Mulai dari</small>
                                     <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
                                 </div>
                             </div>
                         </a>
@@ -155,7 +184,11 @@
                                     alt="Service Image">
                                 <div class="card-body">
                                     <h5 class="card-title">Lorem</h5>
+                                    <small class="text-muted">Mulai dari</small>
                                     <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
                                 </div>
                             </div>
                         </a>
@@ -168,14 +201,52 @@
                                     alt="Service Image">
                                 <div class="card-body">
                                     <h5 class="card-title">Ipsum</h5>
+                                    <small class="text-muted">Mulai dari</small>
                                     <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="{{ route('services.detail') }}" class="text-decoration-none text-dark">
+                            <div class="card service-card h-100">
+                                <img src="https://placehold.co/600x400/e9ecef/e9ecef" class="card-img-top"
+                                    alt="Service Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem</h5>
+                                    <small class="text-muted">Mulai dari</small>
+                                    <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="{{ route('services.detail') }}" class="text-decoration-none text-dark">
+                            <div class="card service-card h-100">
+                                <img src="https://placehold.co/600x400/e9ecef/e9ecef" class="card-img-top"
+                                    alt="Service Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ipsum</h5>
+                                    <small class="text-muted">Mulai dari</small>
+                                    <p class="card-price">Rp250.000</p>
+                                    <span class="badge bg-info-subtle text-info-emphasis rounded-pill">
+                                        <i class="bi bi-search me-1"></i> Perlu Survei
+                                    </span>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <div class="text-center mt-5">
+                <div class="text-center mt-5 mb-5">
                     <button class="btn btn-outline-dark btn-lg px-5">Load more</button>
                 </div>
 
