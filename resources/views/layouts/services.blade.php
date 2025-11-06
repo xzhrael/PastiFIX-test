@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PastiFIX - Solusi Renovasi Rumah Anda</title>
+    <title>@yield('title', 'PastiFIX')</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
+                        <a class="nav-link" href="{{ route('services') }}">Service</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#why-us">Why Us</a>

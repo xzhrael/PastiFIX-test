@@ -164,4 +164,31 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/profil/settings/email', [UserDashboardController::class, 'updateEmail'])
         ->name('profil.settings.email');
 
+    Route::get('/services', function () {
+        return view('services.main');
+    })->name('services');
+
+    // Halaman Detail Jasa
+    Route::get('/services/detail', function () {
+        return view('services.detail');
+    })->name('services.detail');
+
+    // Halaman Checkout
+    Route::get('/services/checkout', function () {
+        return view('services.checkout');
+    })->name('services.checkout');
+
+    // Halaman Pembayaran
+    Route::get('/services/payment', function () {
+        return view('services.payment');
+    })->name('services.payment');
+
+    // Halaman Sukses Setelah Mengajukan
+    Route::get('/services/order-success', function () {
+        return view('services.order');
+    })->name('services.order');
+
+    Route::get('/services/my-orders', function () {
+        return view('services.my-orders');
+    })->name('services.my-orders');
 });
