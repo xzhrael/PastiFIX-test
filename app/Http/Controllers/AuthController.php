@@ -97,7 +97,7 @@ class AuthController extends Controller
             $redirect_url = '';
             // Asumsi relasi role() ada di model User
             if ($user->role && $user->role->code == 'USR') {
-                $redirect_url = route('profil'); // Redirect ke /profil
+                $redirect_url = route('user-main'); // Redirect ke /profil
             } else {
                 $redirect_url = '/dashboard'; // Redirect ke admin dashboard
             }

@@ -188,4 +188,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/services/my-orders', function () {
         return view('services.my-orders');
     })->name('services.my-orders');
+
+    //User landing page
+    Route::get('/user', function () {
+        return view('user-main');
+    })->name('user-main');
 });

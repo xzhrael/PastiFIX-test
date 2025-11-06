@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    
+
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
 
 </head>
@@ -23,12 +23,12 @@
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
     <div class="dashboard-wrapper d-flex">
-        
+
         <aside id="main-sidebar" class="sidebar vh-100 d-flex flex-column p-3">
-            <a class="sidebar-logo text-center my-4" href="/">
+            <a class="sidebar-logo text-center my-4" href="{{ route('user-main') }}">
                 <img src="{{ asset('assets/img/logo.png') }}" alt="PastiFIX Logo" style="height: 90px;">
             </a>
-            
+
             <ul class="nav flex-column sidebar-nav">
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('profil') ? 'active' : '' }}" href="/profil">
@@ -62,7 +62,7 @@
 
         <main class="main-content flex-grow-1">
             <header class="header-dashboard d-flex justify-content-between align-items-center p-4">
-                
+
                 <div class="d-flex align-items-center">
                     <button class="hamburger-btn me-3" id="hamburger-toggle">
                         <i class="bi bi-list"></i>
@@ -75,9 +75,9 @@
 
                 <div class="header-user d-flex align-items-center">
                     @auth
-                        <img src="{{ Auth::user()->profile_picture_url ? Storage::url(Auth::user()->profile_picture_url) : asset('assets/img/default-avatar.png') }}" 
+                        <img src="{{ Auth::user()->profile_picture_url ? Storage::url(Auth::user()->profile_picture_url) : asset('assets/img/default-avatar.png') }}"
                              alt="User Avatar" class="rounded-circle" style="width: 45px; height: 45px; object-fit: cover; margin-right: 10px;">
-                        
+
                         <span class="me-5">Hello, {{ \Illuminate\Support\Str::words(Auth::user()->name, 2, '') }}</span>
                     @else
                         <img src="{{ asset('assets/img/default-avatar.png') }}" alt="User Avatar" class="rounded-circle" style="width: 45px; height: 45px; object-fit: cover; margin-right: 10px;">
@@ -96,9 +96,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <script>
-        
+
         // [FIX 5] JS UNTUK TOGGLE SIDEBAR RESPONSIVE
         document.getElementById('hamburger-toggle').addEventListener('click', function() {
             document.getElementById('main-sidebar').classList.toggle('is-open');
@@ -119,7 +119,7 @@
             spaceBetween: 25,
             loop: true,
             initialSlide: 10, // Default ke November (index 10)
-            
+
             // [FIX BUG 2] Menggunakan breakpoints untuk jumlah slide
             slidesPerView: 3, // Tampilan default (mobile)
             breakpoints: {
@@ -141,6 +141,6 @@
             },
         });
     </script>
-    
+
     @stack('scripts') </body>
 </html>
