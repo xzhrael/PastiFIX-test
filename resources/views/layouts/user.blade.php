@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('services') }}">Service</a>
+                        <a class="nav-link" href="{{ route('services') }}">Layanan</a>
                     </li>
 
                     @auth
@@ -103,7 +103,7 @@
                     <img src="{{ asset('assets/img/logo.png') }}" alt="PastiFIX Logo" class="mb-3"
                         style="height: 50px;">
                     <h5 class="text-white">PT. PastiFIX Indonesia</h5>
-                    <p class="text-white-50">Jl. Klipang No. 123, Semarang, Indonesia. Kami adalah solusi terpercaya
+                    <p class="text-white-50">Jl. Klipang No. 123, Semarang, Indonesia.<br> Kami adalah solusi terpercaya
                         untuk semua kebutuhan renovasi dan perbaikan bangunan Anda.</p>
                 </div>
                 <div class="col-lg-6 col-md-12 text-lg-end">

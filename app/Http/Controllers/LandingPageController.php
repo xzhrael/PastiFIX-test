@@ -19,7 +19,7 @@ class LandingPageController extends Controller
         if($option->is_landing_page == 0) {
             return redirect('/login');
         }
-        
+
         $data = LandingPage::first();
         $sliders = SliderLandingPage::orderBy('id', 'DESC')->where('status', 1)->get();
         $socmed = SocialMedia::where('status', 1)->get();

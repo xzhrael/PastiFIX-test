@@ -6,7 +6,7 @@
     <div class="container text-white">
         <h1>Selamat Datang di website PastiFIX!</h1>
         <p class="lead my-4">Kami ada untuk menyelesaikan masalah bangunan dirumah anda!</p>
-        <a href="#service" class="btn btn-brand btn-lg fw-medium">Get Started</a>
+        <a href="#service" class="btn btn-brand btn-lg fw-medium">Pesan Sekarang</a>
     </div>
 </section>
 
@@ -19,7 +19,9 @@
             <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0">
                 <div class="about-content">
                     <h2 class="section-title">Apa itu PastiFIX?</h2>
-                    <p class="section-subtitle text-secondary">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                    <p class="section-subtitle text-secondary">PastiFIX adalah partner terpercaya Anda dalam mewujudkan
+                            rumah impian. Dengan pengalaman dan keahlian yang mumpuni, kami siap memberikan solusi terbaik
+                            untuk setiap kebutuhan renovasi rumah.</p>
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-4">
@@ -57,8 +59,9 @@
 
 <section id="service" class="section-padding bg-light">
     <div class="container text-center">
-        <h2 class="section-title">Our Service</h2>
-        <p class="section-subtitle text-secondary mx-auto" style="max-width: 600px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2 class="section-title">Layanan Kami</h2>
+        <p class="section-subtitle text-secondary mx-auto" style="max-width: 600px;">Berbagai layanan profesional untuk
+                mewujudkan rumah impian Anda</p>
         <div class="row g-4 mt-5">
             <div class="col-lg-3 col-md-6">
                 <div class="flip-card">
@@ -119,7 +122,7 @@
 <section id="why-us" class="section-padding">
     <div class="container">
         <div class="text-center">
-             <h2 class="section-title">Why Us?</h2>
+             <h2 class="section-title">Mengapa Memilih Kami?</h2>
         </div>
         <div class="row align-items-center mt-5">
             <div class="col-lg-6">
@@ -155,21 +158,21 @@
     <div class="container">
          <div class="row align-items-center">
              <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
-                 <h4 class="fw-bold">Our company stats</h4>
+                 <h4 class="fw-bold">Pencapaian Perusahaan Kami</h4>
              </div>
              <div class="col-lg-8">
                  <div class="row text-center">
                      <div class="col-md-4">
                          <h2 class="fw-bold">99%</h2>
-                         <p class="fw-medium">Satisfaction</p>
+                         <p class="fw-medium">Kepuasan Pelanggan</p>
                      </div>
                       <div class="col-md-4">
                          <h2 class="fw-bold">32K</h2>
-                         <p class="fw-medium">Active users</p>
+                         <p class="fw-medium">Klien Aktif</p>
                      </div>
                       <div class="col-md-4">
                          <h2 class="fw-bold">25+</h2>
-                         <p class="fw-medium">Team members</p>
+                         <p class="fw-medium">Anggota Tim</p>
                      </div>
                  </div>
              </div>
@@ -180,9 +183,9 @@
 <section id="testimoni" class="section-padding">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title">Users Rating</h2>
+            <h2 class="section-title">Testimoni Pelanggan</h2>
         </div>
-        
+
         <div class="swiper testimonial-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">

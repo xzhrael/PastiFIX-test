@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
@@ -31,16 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#why-us">Why Us</a>
+                        <a class="nav-link" href="#service">Layanan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testimoni">Testimoni</a>
@@ -54,10 +51,10 @@
                             <ul class="dropdown-menu">
                                 <li>
                                     <div class="d-flex align-items-center px-3 py-2">
-                                        
+
                                         <img src="{{ Auth::user()->profile_picture_url ? Storage::url(Auth::user()->profile_picture_url) : asset('assets/img/default-avatar.png') }}"
                                              alt="User Avatar" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-                                        
+
                                         <div class="text-start">
                                             <div style="font-weight: 700; color: #333; line-height: 1.2;">{{ Auth::user()->name }}</div>
                                             <div style="font-size: 0.85rem; color: #777;">{{ Auth::user()->email }}</div>
@@ -98,7 +95,7 @@
                 <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                     <img src="{{ asset('assets/img/logo.png') }}" alt="PastiFIX Logo" class="mb-3" style="height: 50px;">
                     <h5 class="text-white">PT. PastiFIX Indonesia</h5>
-                    <p class="text-white-50">Jl. Klipang No. 123, Semarang, Indonesia. Kami adalah solusi terpercaya untuk semua kebutuhan renovasi dan perbaikan bangunan Anda.</p>
+                    <p class="text-white-50">Jl. Klipang No. 123, Semarang, Indonesia.<br> Kami adalah solusi terpercaya untuk semua kebutuhan renovasi dan perbaikan bangunan Anda.</p>
                 </div>
                 <div class="col-lg-6 col-md-12 text-lg-end">
                     <h5 class="text-white mb-3">Bantuan & Sosial Media</h5>
@@ -119,7 +116,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
